@@ -1,0 +1,4 @@
+interface:
+  display_name: "Summarize Knowledge"
+  short_description: "Extract and save verified reusable knowledge"
+  default_prompt: "Use $summarize to extract and save verified lessons from this conversation."

@@ -1,0 +1,227 @@
+=== EditorLogger session start: 2026-09-01T00:48:51 ===
+[2026-09-01T00:48:51] [STDOUT] Editor Logger enabled
+
+[2026-09-01T00:48:51] [STDOUT] [  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+
+[2026-09-01T00:48:51] [STDOUT] [92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+
+[2026-09-01T00:48:52] [STDOUT] [   0% ] [90m[1mupdate_scripts_classes[22m | Started 正在注册全局类…… (4 steps)[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  20% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  40% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  60% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+
+[2026-09-01T00:48:52] [STDOUT] [   0% ] [90m[1m_update_scan_actions[22m | Started 正在扫描动作…… (30 steps)[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [   0% ] [90m[1m_update_scan_actions[22m | index.apple-touch-icon.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [   3% ] [90m[1m_update_scan_actions[22m | index.icon.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [   6% ] [90m[1m_update_scan_actions[22m | index.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [   9% ] [90m[1m_update_scan_actions[22m | comic_coral_bay.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  12% ] [90m[1m_update_scan_actions[22m | comic_coral_bay_source.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  16% ] [90m[1m_update_scan_actions[22m | comic_ruins_garden.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  19% ] [90m[1m_update_scan_actions[22m | comic_ruins_garden_source.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  22% ] [90m[1m_update_scan_actions[22m | comic_vortex_canyon.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  25% ] [90m[1m_update_scan_actions[22m | comic_vortex_canyon_source.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  29% ] [90m[1m_update_scan_actions[22m | comic_boat_sheet.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  32% ] [90m[1m_update_scan_actions[22m | coral_speedboat.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  35% ] [90m[1m_update_scan_actions[22m | deep_sea_cruiser.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  38% ] [90m[1m_update_scan_actions[22m | sea_blue_catamaran.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  41% ] [90m[1m_update_scan_actions[22m | warm_sun_boat.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  45% ] [90m[1m_update_scan_actions[22m | comic_blue_tang.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  48% ] [90m[1m_update_scan_actions[22m | comic_butterflyfish.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  51% ] [90m[1m_update_scan_actions[22m | comic_clownfish.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  54% ] [90m[1m_update_scan_actions[22m | comic_common_fish_sheet.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  58% ] [90m[1m_update_scan_actions[22m | comic_flying_fish.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  61% ] [90m[1m_update_scan_actions[22m | comic_golden_arowana.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  64% ] [90m[1m_update_scan_actions[22m | comic_lionfish.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  67% ] [90m[1m_update_scan_actions[22m | comic_manta_ray.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  70% ] [90m[1m_update_scan_actions[22m | comic_parrotfish.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  74% ] [90m[1m_update_scan_actions[22m | comic_pufferfish.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  77% ] [90m[1m_update_scan_actions[22m | comic_rare_boss_sheet.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  80% ] [90m[1m_update_scan_actions[22m | comic_seahorse.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  83% ] [90m[1m_update_scan_actions[22m | comic_sea_turtle.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  87% ] [90m[1m_update_scan_actions[22m | comic_shark.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  90% ] [90m[1m_update_scan_actions[22m | comic_squirrelfish.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [  93% ] [90m[1m_update_scan_actions[22m | comic_whale_shark_boss.png[39m[0m
+
+[2026-09-01T00:48:52] [STDOUT] [92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+
+[2026-09-01T00:48:53] [STDOUT] [   0% ] [90m[1mreimport[22m | Started 正在导入或重新导入资产 (27 steps)[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [   0% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [   3% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [   7% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  10% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  14% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  17% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  21% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  25% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  28% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  32% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  35% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  39% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  42% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  46% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  50% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  53% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  57% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  60% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  64% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  67% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  71% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  75% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  78% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  82% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  85% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  89% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  92% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [   0% ] [90m[1mreimport[22m | 正在执行重新导入的前置操作……[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [   0% ] [90m[1mreimport[22m | comic_whale_shark_boss.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [   3% ] [90m[1mreimport[22m | comic_squirrelfish.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [   7% ] [90m[1mreimport[22m | comic_shark.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  10% ] [90m[1mreimport[22m | comic_sea_turtle.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  14% ] [90m[1mreimport[22m | comic_seahorse.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  17% ] [90m[1mreimport[22m | comic_rare_boss_sheet.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  21% ] [90m[1mreimport[22m | comic_pufferfish.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  25% ] [90m[1mreimport[22m | comic_parrotfish.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  28% ] [90m[1mreimport[22m | comic_manta_ray.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  32% ] [90m[1mreimport[22m | comic_lionfish.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  35% ] [90m[1mreimport[22m | comic_golden_arowana.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  39% ] [90m[1mreimport[22m | comic_flying_fish.png[39m[0m
+
+[2026-09-01T00:48:53] [STDOUT] [  42% ] [90m[1mreimport[22m | comic_common_fish_sheet.png[39m[0m
+
+[2026-09-01T00:48:54] [STDOUT] [  46% ] [90m[1mreimport[22m | comic_clownfish.png[39m[0m
+
+[2026-09-01T00:48:54] [STDOUT] [  50% ] [90m[1mreimport[22m | comic_butterflyfish.png[39m[0m
+
+[2026-09-01T00:48:54] [STDOUT] [  53% ] [90m[1mreimport[22m | comic_blue_tang.png[39m[0m
+
+[2026-09-01T00:48:54] [STDOUT] [  57% ] [90m[1mreimport[22m | warm_sun_boat.png[39m[0m
+
+[2026-09-01T00:48:54] [STDOUT] [  60% ] [90m[1mreimport[22m | sea_blue_catamaran.png[39m[0m
+
+[2026-09-01T00:48:54] [STDOUT] [  64% ] [90m[1mreimport[22m | deep_sea_cruiser.png[39m[0m
+
+[2026-09-01T00:48:55] [STDOUT] [  67% ] [90m[1mreimport[22m | coral_speedboat.png[39m[0m
+
+[2026-09-01T00:48:55] [STDOUT] [  71% ] [90m[1mreimport[22m | comic_boat_sheet.png[39m[0m
+
+[2026-09-01T00:48:55] [STDOUT] [  75% ] [90m[1mreimport[22m | comic_vortex_canyon_source.png[39m[0m
+
+[2026-09-01T00:48:56] [STDOUT] [  78% ] [90m[1mreimport[22m | comic_vortex_canyon.png[39m[0m
+
+[2026-09-01T00:48:56] [STDOUT] [  82% ] [90m[1mreimport[22m | comic_ruins_garden_source.png[39m[0m
+
+[2026-09-01T00:48:56] [STDOUT] [  85% ] [90m[1mreimport[22m | comic_ruins_garden.png[39m[0m
+
+[2026-09-01T00:48:56] [STDOUT] [  89% ] [90m[1mreimport[22m | comic_coral_bay_source.png[39m[0m
+
+[2026-09-01T00:48:56] [STDOUT] [  92% ] [90m[1mreimport[22m | comic_coral_bay.png[39m[0m
+
+[2026-09-01T00:48:56] [STDOUT] [  96% ] [90m[1mreimport[22m | 正在结束资产导入……[39m[0m
+
+[2026-09-01T00:48:56] [STDOUT] [92m[ DONE ][39m [1mreimport[22m
+[0m
+
+[2026-09-01T00:48:56] [STDOUT] [   0% ] [90m[1mreimport[22m | Started 正在导入或重新导入资产 (27 steps)[39m[0m
+
+[2026-09-01T00:48:56] [STDOUT] [   0% ] [90m[1mreimport[22m | 正在执行重新导入的后置操作……[39m[0m
+
+[2026-09-01T00:48:56] [STDOUT] [92m[ DONE ][39m [1mreimport[22m
+[0m
+
+[2026-09-01T00:48:57] [STDOUT] [   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+
+[2026-09-01T00:48:57] [STDOUT] [   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+
+[2026-09-01T00:48:57] [STDOUT] [  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+
+[2026-09-01T00:48:57] [STDOUT] [  33% ] [90m[1mloading_editor_layout[22m | 正在重新打开场景……[39m[0m
+
+[2026-09-01T00:48:57] [STDOUT] [  50% ] [90m[1mloading_editor_layout[22m | 正在加载中央编辑器布局……[39m[0m
+
+[2026-09-01T00:48:57] [STDOUT] [  66% ] [90m[1mloading_editor_layout[22m | 正在加载插件窗口布局……[39m[0m
+
+[2026-09-01T00:48:58] [STDOUT] [  83% ] [90m[1mloading_editor_layout[22m | 编辑器布局就绪。[39m[0m
+
+[2026-09-01T00:48:58] [STDOUT] [92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="FishDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/fish_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://resources/art/fish/manta_ray_0.png" id="2"]
+[ext_resource type="Texture2D" path="res://resources/art/fish/manta_ray_1.png" id="3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fish"]
+animations = [{
+"frames": [{"duration": 1.0, "texture": ExtResource("2")}, {"duration": 1.0, "texture": ExtResource("3")}],
+"loop": true,
+"name": &"swim",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("1")
+id = &"manta_ray"
+display_name = "魔鬼鱼"
+sprite_frames = SubResource("SpriteFrames_fish")
+collision_radius = 54.0
+reward = 25
+base_capture_chance = 0.034
+spawn_weight = 8.0
+speed_min = 85.0
+speed_max = 115.0
+display_scale = 1.0
+is_boss = false

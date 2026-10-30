@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-08",
+  "runner": "@playwright/test 1.62.1",
+  "browser": "installed Google Chrome via channel=chrome",
+  "command": "npm run test:e2e:chrome",
+  "exit_code": 0,
+  "summary": "2 passed (40.4s)",
+  "cases": [
+    {
+      "id": "CHROME-01",
+      "name": "Chrome Web startup and responsive layout",
+      "status": "pass",
+      "checks": [
+        "HTTP startup response successful",
+        "canvas stable at 1280x720 and 1920x1080",
+        "zero page scroll",
+        "no page or console errors"
+      ]
+    },
+    {
+      "id": "CHROME-02",
+      "name": "Chrome dual input, pause, no-scroll, and audio unlock",
+      "status": "pass",
+      "checks": [
+        "Chrome user agent verified and Edge excluded",
+        "P1 A+Space and P2 ArrowRight+Enter held concurrently",
+        "AudioContext reached running after interaction",
+        "Escape visibly opened pause state",
+        "zero page scroll",
+        "no page or console errors"
+      ]
+    }
+  ]
+}

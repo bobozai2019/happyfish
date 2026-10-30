@@ -1,0 +1,195 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://resources/art/ui/coin.svg" id="1_coin"]
+[ext_resource type="Theme" path="res://resources/fonts/ui_theme.tres" id="2_theme"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_theme")
+
+[node name="P1Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 20.0
+offset_right = 310.0
+offset_bottom = 210.0
+theme_override_styles/panel = null
+
+[node name="Layout" type="VBoxContainer" parent="P1Panel"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Title" type="Label" parent="P1Panel/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.72, 0.3, 1)
+theme_override_font_sizes/font_size = 26
+text = "玩家 1  ★ 暖阳炮台"
+
+[node name="CoinIcon" type="TextureRect" parent="P1Panel/Layout"]
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+texture = ExtResource("1_coin")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Coins" type="Label" parent="P1Panel/Layout"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "金币  120"
+
+[node name="Multiplier" type="Label" parent="P1Panel/Layout"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "炮倍  1×"
+
+[node name="Controls" type="Label" parent="P1Panel/Layout"]
+layout_mode = 2
+text = "A / D 瞄准　W / S 换档　Space 开炮"
+
+[node name="Status" type="Label" parent="P1Panel/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 1, 0.75, 1)
+text = "准备捕鱼！"
+
+[node name="P2Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -310.0
+offset_top = 20.0
+offset_right = -24.0
+offset_bottom = 210.0
+grow_horizontal = 0
+
+[node name="Layout" type="VBoxContainer" parent="P2Panel"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Title" type="Label" parent="P2Panel/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.35, 0.85, 1, 1)
+theme_override_font_sizes/font_size = 26
+text = "玩家 2  ◆ 海蓝炮台"
+horizontal_alignment = 2
+
+[node name="CoinIcon" type="TextureRect" parent="P2Panel/Layout"]
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+texture = ExtResource("1_coin")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Coins" type="Label" parent="P2Panel/Layout"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "金币  120"
+horizontal_alignment = 2
+
+[node name="Multiplier" type="Label" parent="P2Panel/Layout"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "炮倍  1×"
+horizontal_alignment = 2
+
+[node name="Controls" type="Label" parent="P2Panel/Layout"]
+layout_mode = 2
+text = "方向键瞄准 / 换档　Enter 开炮"
+horizontal_alignment = 2
+
+[node name="Status" type="Label" parent="P2Panel/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 1, 0.75, 1)
+text = "准备捕鱼！"
+horizontal_alignment = 2
+
+[node name="PauseButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_top = 24.0
+offset_right = 64.0
+offset_bottom = 70.0
+grow_horizontal = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 20
+text = "暂停  Esc"
+
+[node name="MessageBanner" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -270.0
+offset_top = 92.0
+offset_right = 270.0
+offset_bottom = 154.0
+grow_horizontal = 2
+
+[node name="Text" type="Label" parent="MessageBanner"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.93, 0.4, 1)
+theme_override_font_sizes/font_size = 25
+text = "捕鱼提示"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MessageTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="SingleMouseControls" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -196.0
+offset_top = -104.0
+offset_right = 196.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 1
+theme_override_constants/separation = 14
+alignment = 1
+
+[node name="LevelDownButton" type="Button" parent="SingleMouseControls"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(72, 64)
+layout_mode = 2
+mouse_filter = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 34
+text = "－"
+
+[node name="FireButton" type="Button" parent="SingleMouseControls"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(190, 72)
+layout_mode = 2
+mouse_filter = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 0.93, 0.45, 1)
+theme_override_font_sizes/font_size = 26
+text = "开炮！"
+
+[node name="LevelUpButton" type="Button" parent="SingleMouseControls"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(72, 64)
+layout_mode = 2
+mouse_filter = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 34
+text = "＋"

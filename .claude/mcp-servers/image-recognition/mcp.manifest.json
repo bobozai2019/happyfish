@@ -1,0 +1,41 @@
+{
+  "schema_version": "1",
+  "name": "image-recognition",
+  "description": "识别图片内容，返回详细描述。支持 URL 和本地文件路径。",
+  "transport": "stdio",
+  "runtime": {
+    "language": "python",
+    "command": "python",
+    "args": ["server.py"],
+    "entrypoint": "server.py"
+  },
+  "required_env": [
+    {
+      "name": "MIMO_API_KEY",
+      "description": "MiMo API key。必须由用户环境变量或本机 secret manager 提供，禁止写入仓库或 agent 配置示例。"
+    }
+  ],
+  "optional_env": [
+    {
+      "name": "MIMO_BASE_URL",
+      "default": "https://token-plan-cn.xiaomimimo.com/v1",
+      "description": "MiMo OpenAI-compatible API base URL。"
+    },
+    {
+      "name": "MIMO_MODEL",
+      "default": "mimo-v2.5",
+      "description": "用于图片识别的 MiMo 模型。"
+    }
+  ],
+  "tools": [
+    {
+      "name": "image_recognize",
+      "description": "识别图片内容，返回详细描述。",
+      "input": {
+        "image": "图片 URL 或本地文件路径",
+        "prompt": "可选提示词"
+      }
+    }
+  ],
+  "capabilities": ["vision", "local-file-image", "remote-image-url"]
+}

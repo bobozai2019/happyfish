@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3]
+
+[sub_resource type="Curve2D" id="Curve_upper"]
+_data = {"points": PackedVector2Array(-80, 0, 100, 20, -160, 150, -120, -80, 120, 80, 300, 330, -120, 80, 120, -80, 800, 120, -100, 0, 100, 0, 1440, 260)}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve_middle"]
+_data = {"points": PackedVector2Array(-100, 0, 100, -20, -160, 410, -120, 100, 120, -100, 320, 190, -120, -100, 120, 100, 880, 470, -100, 0, 100, 0, 1440, 330)}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve_lower"]
+_data = {"points": PackedVector2Array(-100, 0, 100, 0, -160, 560, -100, -80, 100, 80, 380, 430, -100, 60, 100, -60, 910, 590, -100, 0, 100, 0, 1440, 500)}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve_wave"]
+_data = {"points": PackedVector2Array(-100, 0, 100, 0, -160, 280, -100, 120, 100, -120, 340, 520, -100, -120, 100, 120, 820, 230, -100, 0, 100, 0, 1440, 470)}
+point_count = 4
+
+[node name="FishPaths" type="Node2D"]
+
+[node name="UpperArc" type="Path2D" parent="."]
+curve = SubResource("Curve_upper")
+
+[node name="MiddleArc" type="Path2D" parent="."]
+curve = SubResource("Curve_middle")
+
+[node name="LowerArc" type="Path2D" parent="."]
+curve = SubResource("Curve_lower")
+
+[node name="WaveArc" type="Path2D" parent="."]
+curve = SubResource("Curve_wave")

@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "godotiq": {
+      "args": [
+        "-m",
+        "godotiq"
+      ],
+      "type": "stdio",
+      "command": "python",
+      "env": {
+        "GODOTIQ_ADDON_PORT": "6008",
+        "GODOTIQ_PROJECT_ROOT": "D:/godot/project/happy-fish",
+        "PYTHONPATH": "D:/godot/project/happy-fish/addons/godotiq"
+      }
+    },
+    "image-recognition": {
+      "args": [
+        ".claude/mcp-servers/image-recognition/server.py"
+      ],
+      "type": "stdio",
+      "command": "python"
+    }
+  }
+}

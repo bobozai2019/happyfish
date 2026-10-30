@@ -1,0 +1,151 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Theme" path="res://resources/fonts/ui_theme.tres" id="1_theme"]
+
+[node name="PauseOverlay" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+theme = ExtResource("1_theme")
+
+[node name="Shade" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.06, 0.16, 0.78)
+
+[node name="CenterPanel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -210.0
+offset_top = -235.0
+offset_right = 210.0
+offset_bottom = 235.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Layout" type="VBoxContainer" parent="CenterPanel"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Title" type="Label" parent="CenterPanel/Layout"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "已暂停"
+horizontal_alignment = 1
+
+[node name="Hint" type="Label" parent="CenterPanel/Layout"]
+layout_mode = 2
+text = "休息一下，鱼儿也在等你们！"
+horizontal_alignment = 1
+
+[node name="ControlSection" type="VBoxContainer" parent="CenterPanel/Layout"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ControlLabel" type="Label" parent="CenterPanel/Layout/ControlSection"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 19
+text = "单人操作方式（即时切换）"
+horizontal_alignment = 1
+
+[node name="ControlButtons" type="HBoxContainer" parent="CenterPanel/Layout/ControlSection"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="MouseControlButton" type="Button" parent="CenterPanel/Layout/ControlSection/ControlButtons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+focus_mode = 0
+toggle_mode = true
+text = "鼠标"
+
+[node name="KeyboardControlButton" type="Button" parent="CenterPanel/Layout/ControlSection/ControlButtons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+focus_mode = 0
+toggle_mode = true
+text = "键盘"
+
+[node name="ControlHint" type="Label" parent="CenterPanel/Layout/ControlSection"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.9, 1, 1)
+text = "鼠标瞄准 · 左键或按钮开炮"
+horizontal_alignment = 1
+
+[node name="ContinueButton" type="Button" parent="CenterPanel/Layout"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "继续游戏"
+
+[node name="RestartButton" type="Button" parent="CenterPanel/Layout"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "重新开始"
+
+[node name="ReturnSelectButton" type="Button" parent="CenterPanel/Layout"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "返回模式选择"
+
+[node name="ConfirmPanel" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -230.0
+offset_top = -90.0
+offset_right = 230.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Layout" type="VBoxContainer" parent="ConfirmPanel"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Question" type="Label" parent="ConfirmPanel/Layout"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "确认开始全新一局吗？"
+horizontal_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="ConfirmPanel/Layout"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="ConfirmButton" type="Button" parent="ConfirmPanel/Layout/Buttons"]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+text = "确认重开"
+
+[node name="CancelButton" type="Button" parent="ConfirmPanel/Layout/Buttons"]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+text = "继续这一局"

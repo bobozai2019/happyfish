@@ -1,0 +1,4 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 581.83 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce GTX 1050
+
+PERFORMANCE: {"average_fps":60.022287802009,"duration_seconds":10.013,"minimum_one_second_fps":59.8469712944002,"one_second_fps_samples":[60.0892867697182,60.0383654997899,60.0055283781883,60.0339930183419,59.8469712944002,60.1523333188705,60.0300346993283,60.017454256369,59.9866229830748],"ordinary_fish":17,"pass":true,"sustained_below_55":false}

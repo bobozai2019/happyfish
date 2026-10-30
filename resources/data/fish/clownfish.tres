@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="FishDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/fish_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://resources/art/fish/clownfish_0.png" id="2"]
+[ext_resource type="Texture2D" path="res://resources/art/fish/clownfish_1.png" id="3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fish"]
+animations = [{
+"frames": [{"duration": 1.0, "texture": ExtResource("2")}, {"duration": 1.0, "texture": ExtResource("3")}],
+"loop": true,
+"name": &"swim",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("1")
+id = &"clownfish"
+display_name = "小丑鱼"
+sprite_frames = SubResource("SpriteFrames_fish")
+collision_radius = 28.0
+reward = 2
+base_capture_chance = 0.35
+spawn_weight = 24.0
+speed_min = 140.0
+speed_max = 180.0
+display_scale = 1.0
+is_boss = false

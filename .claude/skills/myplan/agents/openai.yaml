@@ -1,0 +1,4 @@
+interface:
+  display_name: "MyPlan"
+  short_description: "Generate trackable executable plans"
+  default_prompt: "Use $myplan to turn this product idea into an executable task plan."

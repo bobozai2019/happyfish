@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-08",
+  "server": {
+    "url": "http://127.0.0.1:8060/index.html",
+    "status": 200,
+    "cross_origin_opener_policy": "same-origin",
+    "cross_origin_embedder_policy": "require-corp"
+  },
+  "edge": {
+    "browser": "Microsoft Edge",
+    "status": "pass",
+    "checks": {
+      "1280x720_canvas": "1280x720 backing store, 1279x719 client area",
+      "1920x1080_canvas": "1920x1080 backing store, 1919x1079 client area",
+      "keyboard_focus": "CANVAS#canvas",
+      "dual_input": "A+Space and ArrowRight+Enter accepted after focus",
+      "pause": "Escape opened the Chinese pause overlay",
+      "page_scroll": "scrollX=0, scrollY=0 at both sizes",
+      "console": "no warnings or errors after clean load",
+      "audio_unlock": "first canvas interaction executed without audio warning"
+    }
+  },
+  "chrome": {
+    "browser": "Google Chrome 151.0.7922.108",
+    "automation": "Playwright 1.62.1, channel=chrome, headless=true",
+    "status": "pass",
+    "command": "npm run test:e2e:chrome",
+    "result": "2 passed (40.4s)",
+    "checks": {
+      "real_chrome": "user agent contains Chrome and excludes Edg",
+      "1280x720_canvas": "1280x720 backing store and client area, stable across animation frames",
+      "1920x1080_canvas": "1920x1080 backing store and client area, stable across animation frames",
+      "keyboard_focus": "CANVAS#canvas",
+      "dual_input": "A+Space and ArrowRight+Enter held concurrently across two animation frames",
+      "pause": "Escape visibly changed the central canvas to the Chinese pause overlay",
+      "page_scroll": "scrollX=0, scrollY=0 at both sizes and during simultaneous input",
+      "console": "pageErrors=[], consoleErrors=[]",
+      "audio_unlock": "instrumented native AudioContext reached running after canvas interaction"
+    },
+    "screenshots": [
+      "screenshots/chrome_playwright_1280x720.png",
+      "screenshots/chrome_playwright_1920x1080.png",
+      "screenshots/chrome_playwright_dual_input.png",
+      "screenshots/chrome_playwright_pause.png"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+# Project-level Codex configuration
+# MCP servers for this project
+
+[mcp_servers.godotiq]
+command = "python"
+args = ["-m", "godotiq"]
+cwd = "D:/godot/project/happy-fish"
+env = { PYTHONPATH = "D:/godot/project/happy-fish/addons/godotiq", GODOTIQ_ADDON_PORT = "6008" }
+
+[mcp_servers.image-recognition]
+type = "stdio"
+command = "python"
+args = [ "D:\\AIprogram\\myaitool\\mcp-servers\\image-recognition\\server.py" ]
+enabled = true
+

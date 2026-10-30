@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Theme" path="res://resources/fonts/ui_theme.tres" id="1_theme"]
+
+[node name="ResultsOverlay" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+theme = ExtResource("1_theme")
+
+[node name="Shade" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.08, 0.2, 0.88)
+
+[node name="CenterPanel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -430.0
+offset_top = -260.0
+offset_right = 430.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Layout" type="VBoxContainer" parent="CenterPanel"]
+layout_mode = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="Title" type="Label" parent="CenterPanel/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.84, 0.3, 1)
+theme_override_font_sizes/font_size = 40
+text = "这一局真精彩！"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="CenterPanel/Layout"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "两位捕鱼搭档的收获"
+horizontal_alignment = 1
+
+[node name="P1Stats" type="Label" parent="CenterPanel/Layout"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.72, 0.3, 1)
+theme_override_font_sizes/font_size = 23
+text = "玩家 1\n捕获 0 条　总价值 0\n最大鱼：暂无"
+horizontal_alignment = 1
+
+[node name="P2Stats" type="Label" parent="CenterPanel/Layout"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.35, 0.85, 1, 1)
+theme_override_font_sizes/font_size = 23
+text = "玩家 2\n捕获 0 条　总价值 0\n最大鱼：暂无"
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="CenterPanel/Layout"]
+custom_minimum_size = Vector2(0, 58)
+layout_mode = 2
+theme_override_font_sizes/font_size = 23
+text = "再来一局  R"
+
+[node name="ReturnSelectButton" type="Button" parent="CenterPanel/Layout"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 21
+text = "返回模式选择"

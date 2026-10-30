@@ -1,0 +1,13 @@
+{
+  "name": "happy-fish-e2e",
+  "private": true,
+  "scripts": {
+    "postinstall": "node -e \"require('fs').writeFileSync('node_modules/.gdignore', '')\"",
+    "test:e2e": "playwright test",
+    "test:e2e:chrome": "playwright test --project=chrome",
+    "test:e2e:edge": "playwright test --project=edge"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1",
+  "name": "godotiq",
+  "description": "MCP server bridging AI assistants to Godot editor and running game via WebSocket. Provides scene manipulation, GDScript editing, runtime inspection, screenshot capture, and more.",
+  "transport": "stdio",
+  "runtime": {
+    "language": "python",
+    "command": "python",
+    "args": ["-m", "godotiq"],
+    "entrypoint": "godotiq/server.py"
+  },
+  "required_env": [],
+  "optional_env": [
+    {
+      "name": "GODOTIQ_PROJECT_ROOT",
+      "default": "",
+      "description": "Override Godot project root discovery. If unset, auto-detected from working directory."
+    },
+    {
+      "name": "GODOTIQ_ADDON_PORT",
+      "default": "6107",
+      "description": "WebSocket port for Godot editor addon communication."
+    },
+    {
+      "name": "GODOTIQ_LICENSE_KEY",
+      "default": "",
+      "description": "Pro license key for unlocking additional analysis tools."
+    },
+    {
+      "name": "GODOTIQ_DEV_KEY",
+      "default": "",
+      "description": "Development key bypass for Pro tools."
+    }
+  ],
+  "tools": [
+    { "name": "godotiq_ping", "description": "Health check" },
+    { "name": "godotiq_screenshot", "description": "Viewport capture (game/editor)" },
+    { "name": "godotiq_run", "description": "Start/stop game" },
+    { "name": "godotiq_perf_snapshot", "description": "FPS, draw calls, memory stats" },
+    { "name": "godotiq_editor_context", "description": "Editor state (open scenes, selections)" },
+    { "name": "godotiq_scene_tree", "description": "Live editor scene tree" },
+    { "name": "godotiq_node_ops", "description": "Batch node operations (move/rotate/scale/add/delete)" },
+    { "name": "godotiq_script_ops", "description": "GDScript read/write/patch" },
+    { "name": "godotiq_file_ops", "description": "Filesystem operations (list/read/write/move/delete/search/rename)" },
+    { "name": "godotiq_input", "description": "Player input simulation" },
+    { "name": "godotiq_exec", "description": "Execute arbitrary GDScript in game sandbox or editor" },
+    { "name": "godotiq_state_inspect", "description": "Runtime property queries" },
+    { "name": "godotiq_nav_query", "description": "NavigationServer3D pathfinding" },
+    { "name": "godotiq_watch", "description": "Persistent property monitoring" },
+    { "name": "godotiq_undo_history", "description": "Undo/redo state" },
+    { "name": "godotiq_save_scene", "description": "Save scene to disk" },
+    { "name": "godotiq_camera", "description": "Editor 3D camera control" },
+    { "name": "godotiq_ui_map", "description": "UI element mapping" },
+    { "name": "godotiq_build_scene", "description": "Batch node creation (grid/line/scatter)" },
+    { "name": "godotiq_check_errors", "description": "GDScript compilation check" },
+    { "name": "godotiq_read_debug_console", "description": "Read debug console errors" },
+    { "name": "godotiq_verify_project_runs", "description": "Play-mode verification" },
+    { "name": "godotiq_verify_motion", "description": "Motion verification" },
+    { "name": "godotiq_game_scene_tree", "description": "Runtime scene tree query" },
+    { "name": "godotiq_press_button", "description": "Trigger button signals" },
+    { "name": "godotiq_find_node", "description": "Find node by name" },
+    { "name": "godotiq_reload_addon", "description": "Hot-reload addon scripts" }
+  ],
+  "capabilities": ["godot-bridge", "runtime-inspection", "scene-manipulation", "gdscript-editing", "screenshot"]
+}
